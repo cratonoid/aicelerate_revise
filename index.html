@@ -47,7 +47,7 @@
 
     <!-- Bootstrap Select JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/js/bootstrap-select.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 
 
   
@@ -172,13 +172,30 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     </div>
 
     <!-- Second Banner Section -->
-    <div class="position-relative w-100 heroSection1">
-        <!-- Desktop Second Banner -->
-        <img src="https://cratonoid.github.io/aicelerate_revise/img/Slide-2.png" alt="Slide" class="img-fluid w-100 hero-image d-none d-md-block">
-        <!-- Mobile Second Banner -->
-        <img src="https://cratonoid.github.io/aicelerate_revise/img/Asset 112.webp" alt="Mobile Slide" class="img-fluid w-100 hero-image d-block d-md-none">
+    <div class="position-relative w-100 heroSection1 key-figures">
+        <div class="container pt-3 pb-2">
+            <h2 class="text-center key-title">Key Figures</h2>
+            <div class="row align-items-center justify-content-center mt-1 g-3 g-md-4">
+                <div class="kf-col col-12 col-md-4 d-flex flex-column align-items-center text-center mb-2 mb-md-0">
+                    <div class="kf-icon"><i class="bi bi-envelope-open"></i></div>
+                    <div class="kf-heading">40% Response Rate</div>
+                    <div class="kf-sub">On First Outreach</div>
+                </div>
+                <div class="kf-col col-12 col-md-4 d-flex flex-column align-items-center text-center mb-2 mb-md-0">
+                    <div class="kf-icon"><i class="bi bi-person-check"></i></div>
+                    <div class="kf-heading">20% Acceptance</div>
+                    <div class="kf-sub">On Connections Requests</div>
+                </div>
+                <div class="kf-col col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                    <div class="kf-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                    <div class="kf-heading">10% Avg Conversation Rate</div>
+                    <div class="kf-sub">On High-Ticket Products & Services</div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<!-- Case Studies Section moved below Success Story -->
 
 
 <style>
@@ -188,6 +205,78 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 }
 #formLoaderOverlay {
   transition: opacity 0.3s ease;
+}
+
+/* Key Figures Styles */
+.key-figures {
+  background: linear-gradient(90deg, #e7e9ff 0%, #eef6fb 50%, #ffffff 100%);
+  border-radius: 0;
+}
+.key-title{
+  font-family: 'Overpass', sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: #696cc7;
+  margin-bottom: 0.5rem;
+}
+.kf-icon i{
+  font-size: 2.2rem;
+  color: #696cc7;
+}
+.kf-icon{
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.kf-col{
+  position: relative;
+}
+.kf-col:not(:last-child)::after{
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5px;
+  height: 90px;
+  background: #8f93d9;
+  opacity: 0.6;
+  display: none;
+}
+@media (min-width: 768px){
+  .kf-col:not(:last-child)::after{ display: block; }
+}
+.kf-heading{
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #1f2230;
+  line-height: 1.2;
+}
+.kf-sub{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  color: #2f333d;
+}
+.kf-divider{
+  height: 90px;
+  width: 1.5px;
+  background: #8f93d9;
+  opacity: 0.6;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px){
+  .key-figures{
+    border-radius: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .key-title{ font-size: 2.1rem; margin-bottom: 0.25rem; }
+  .kf-heading{ font-size: 1.8rem; }
+  .kf-sub{ font-size: 0.95rem; }
 }
 
 
@@ -666,6 +755,121 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 }
 </style>
 <!--  How we are Section End -->
+
+<!-- Key Issues That We Solve -->
+<div class="hwwe container py-5">
+    <div class="text-center">
+        <h2 class="hwdesc1" style="
+            font-family: 'Overpass', sans-serif;
+            font-weight: 900;
+            font-size: 2.5rem;
+            color: #696cc7;   
+            margin-bottom: 0px;
+            letter-spacing: 0.5px;
+        ">
+            Key Issues That We Solve
+        </h2>
+    </div>
+
+    <div class="row g-4 mt-2">
+        <!-- Issue 1 -->
+        <div class="hwcards col-md-6 col-lg-4">
+            <div class="cc border-0 shadow-sm h-100"
+                style="
+                    background: linear-gradient(135deg, #e7f5fc, #feffff);
+                    padding: 20px;
+                    border-radius: 16px;
+                    transition: transform 0.3s ease;
+                "
+            >
+                <div style="display: flex; align-items: center;" class="par">
+                    <i class="bi bi-person-x" style="font-size: 28px; color: #696cc7; margin-right: 4%;"></i>
+                    <p class="mb-0" style="text-align: left;">
+                        Low client retention has caused a constant hunt for new business prospects.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Issue 2 -->
+        <div class="hwcards col-md-6 col-lg-4">
+            <div class="cc border-0 shadow-sm h-100"
+                style="
+                    background: linear-gradient(135deg, #e7f5fc, #feffff);
+                    padding: 20px;
+                    border-radius: 16px;
+                    transition: transform 0.3s ease;
+                "
+            >
+                <div style="display: flex; align-items: center;" class="par">
+                    <i class="bi bi-cash-coin" style="font-size: 28px; color: #696cc7; margin-right: 4%;"></i>
+                    <p class="mb-0" style="text-align: left;">
+                        Competitive bidding on conventional marketing channels has increased your CPL & CPS.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Issue 3 -->
+        <div class="hwcards col-md-6 col-lg-4">
+            <div class="cc border-0 shadow-sm h-100"
+                style="
+                    background: linear-gradient(135deg, #e7f5fc, #feffff);
+                    padding: 20px;
+                    border-radius: 16px;
+                    transition: transform 0.3s ease;
+                "
+            >
+                <div style="display: flex; align-items: center;" class="par">
+                    <i class="bi bi-ban" style="font-size: 28px; color: #696cc7; margin-right: 4%;"></i>
+                    <p class="mb-0" style="text-align: left;">
+                        Sales goals are regularly undermined by incorrect ad disapprovals.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Issue 4 -->
+        <div class="hwcards col-md-6 col-lg-4">
+            <div class="cc border-0 shadow-sm h-100"
+                style="
+                    background: linear-gradient(135deg, #e7f5fc, #feffff);
+                    padding: 20px;
+                    border-radius: 16px;
+                    transition: transform 0.3s ease;
+                "
+            >
+                <div style="display: flex; align-items: center;" class="par">
+                    <i class="bi bi-rocket-takeoff" style="font-size: 28px; color: #696cc7; margin-right: 4%;"></i>
+                    <p class="mb-0" style="text-align: left;">
+                        Current marketing channels do not resonate with your need for exponential growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Issue 5 -->
+        <div class="hwcards col-md-6 col-lg-4">
+            <div class="cc border-0 shadow-sm h-100"
+                style="
+                    background: linear-gradient(135deg, #e7f5fc, #feffff);
+                    padding: 20px;
+                    border-radius: 16px;
+                    transition: transform 0.3s ease;
+                "
+            >
+                <div style="display: flex; align-items: center;" class="par">
+                    <i class="bi bi-bullseye" style="font-size: 28px; color: #696cc7; margin-right: 4%;"></i>
+                    <p class="mb-0" style="text-align: left;">
+                        No uniqueness in targeting prospects that differentiates you from competitors.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Key Issues Section End -->
 
 <style>
   .accordion-section-title {
@@ -1658,6 +1862,263 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 
+<!-- Case Studies Section (Accordion) -->
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h2 style="
+          font-family: 'Overpass', sans-serif;
+          font-weight: 900;
+          font-size: 2.5rem;
+          color: #696cc7;   
+          margin-bottom: 0px;
+          letter-spacing: 0.5px;
+      ">Case Studies</h2>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 15px; color: #5b5b5b; letter-spacing: 0.5px;">
+      We are sharing case studies with IT entrepreneurs and consultancies, where it is notoriously difficult to engage decision-makers, identify qualified leads, and manage high CAC. AIcelerate demonstrates how AI-powered outreach translates into real traction — from funding to enterprise contracts and government partnerships.
+    </p>
+  </div>
+
+  <div class="accordion" id="caseStudiesAccordion">
+    <!-- Case 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="csHeadingOne">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseOne" aria-expanded="false" aria-controls="csCollapseOne">
+          Case 1. M87 (Gaming & Web3, Thailand)
+        </button>
+      </h2>
+      <div id="csCollapseOne" class="accordion-collapse collapse" aria-labelledby="csHeadingOne" data-bs-parent="#caseStudiesAccordion">
+        <div class="accordion-body">
+          <p><strong>Thesis:</strong> AIcelerate built an investor pipeline that converted into funding for a Web3 startup.</p>
+          <p><strong>Challenge:</strong> Preparing for a seed round, M87 needed to identify and engage relevant investors and strategic partners across South Asia.</p>
+          <p><strong>Strategy:</strong> Leveraged AIcelerate to generate a hyper-targeted investor list and run personalized outreach — without SDRs or manual research.</p>
+          <ul class="ps-3 mb-0">
+            <li>Raised $500K USD in seed funding</li>
+            <li>Prioritized pool of active investors and partners</li>
+            <li>Active partnership discussions in South Asia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="csHeadingTwo">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseTwo" aria-expanded="false" aria-controls="csCollapseTwo">
+          Case 2. DELIVERED. (Experiential Media & Immersive Art, UAE/Bali)
+        </button>
+      </h2>
+      <div id="csCollapseTwo" class="accordion-collapse collapse" aria-labelledby="csHeadingTwo" data-bs-parent="#caseStudiesAccordion">
+        <div class="accordion-body">
+          <p><strong>Thesis:</strong> AIcelerate drove cultural expansion and converted early meetings into revenue.</p>
+          <p><strong>Challenge:</strong> The company sought international partners in the cultural and experiential events space.</p>
+          <p><strong>Strategy:</strong> AIcelerate executed highly personalized outreach campaigns targeting art institutions and event leaders.</p>
+          <ul class="ps-3 mb-0">
+            <li>Secured $50K USD contract from first meetings</li>
+            <li>Meeting with Director of a major art gallery</li>
+            <li>Meetings with CEOs of Saudi & UAE event firms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="csHeadingThree">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseThree" aria-expanded="false" aria-controls="csCollapseThree">
+          Case 3. AI Consulting FZCO (Enterprise IT Consulting, UAE)
+        </button>
+      </h2>
+      <div id="csCollapseThree" class="accordion-collapse collapse" aria-labelledby="csHeadingThree" data-bs-parent="#caseStudiesAccordion">
+        <div class="accordion-body">
+          <p><strong>Thesis:</strong> AIcelerate enabled enterprise access and secured regional advisory support.</p>
+          <p><strong>Challenge:</strong> Needed to establish contact with CIOs/CTOs at enterprise corporations to present their microservices platform.</p>
+          <p><strong>Strategy:</strong> Used AIcelerate to generate first-touch meetings with target accounts and technology leaders.</p>
+          <ul class="ps-3 mb-0">
+            <li>Secured a strategic advisor in KSA</li>
+            <li>Initial meetings with Directors of IT & CTOs</li>
+            <li>Structured dialogues on integration opportunities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="csHeadingFour">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseFour" aria-expanded="false" aria-controls="csCollapseFour">
+          Case 4. HoloFair Technologies Ltd (Immersive 3D, UAE)
+        </button>
+      </h2>
+      <div id="csCollapseFour" class="accordion-collapse collapse" aria-labelledby="csHeadingFour" data-bs-parent="#caseStudiesAccordion">
+        <div class="accordion-body">
+          <p><strong>Thesis:</strong> AIcelerate unlocked access in a difficult niche — government & enterprise digital transformation.</p>
+          <p><strong>Challenge:</strong> Sought enterprise and government clients in UAE/KSA for immersive training, events, and engagement.</p>
+          <p><strong>Strategy:</strong> AIcelerate enabled targeted outreach to ministries, enterprises, and transformation leaders.</p>
+          <ul class="ps-3 mb-0">
+            <li>Meetings with Ministry of Health, Saudi Arabia</li>
+            <li>Meeting with Deputy Minister of Digital Transformation, Ministry of Justice, KSA</li>
+            <li>Engagements with Capco Middle East & EJADA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="csHeadingFive">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseFive" aria-expanded="false" aria-controls="csCollapseFive">
+          Case 5. Buildroid (ConTech & Robotics, UAE/USA)
+        </button>
+      </h2>
+      <div id="csCollapseFive" class="accordion-collapse collapse" aria-labelledby="csHeadingFive" data-bs-parent="#caseStudiesAccordion">
+        <div class="accordion-body">
+          <p><strong>Thesis:</strong> AIcelerate opened doors to the toughest construction players in the GCC.</p>
+          <p><strong>Challenge:</strong> Buildroid needed pilot customers among top developers/contractors in GCC.</p>
+          <p><strong>Strategy:</strong> AIcelerate generated conversations with decision-makers to validate robotics use cases and prepare pilots.</p>
+          <ul class="ps-3 mb-0">
+            <li>Secured meetings in construction verticals (DAMAC & Sobha)</li>
+            <li>Response from Project Director, DAMAC Properties</li>
+            <li>Meeting with VP, DAMAC Projects & Transformation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 6 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="csHeadingSix">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseSix" aria-expanded="false" aria-controls="csCollapseSix">
+          Case 6. X-Technology FZCO (VR Therapy & Neuroscience, UAE)
+        </button>
+      </h2>
+      <div id="csCollapseSix" class="accordion-collapse collapse" aria-labelledby="csHeadingSix" data-bs-parent="#caseStudiesAccordion">
+        <div class="accordion-body">
+          <p><strong>Thesis:</strong> AIcelerate converted scientific validation into pilots with top hospitals & universities.</p>
+          <p><strong>Challenge:</strong> Needed validation with clinical partners in UAE, Saudi, and Bahrain, while also initiating fundraising.</p>
+          <p><strong>Strategy:</strong> AIcelerate supported personalized outreach to healthcare leaders, hospitals, universities, and investors.</p>
+          <ul class="ps-3 mb-0">
+            <li>Signed pilots with Burjeel & Cleveland Clinic</li>
+            <li>Initiated research collaboration with American University</li>
+            <li>Collaboration with King Saud University for clinical validation</li>
+            <li>Healthcare investor discussions opened</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Media Mentions Section -->
+<div class="container my-5 media-mentions">
+  <div class="text-center mb-4">
+    <h2 style="
+          font-family: 'Overpass', sans-serif;
+          font-weight: 900;
+          font-size: 2.5rem;
+          color: #696cc7;   
+          margin-bottom: 0px;
+          letter-spacing: 0.5px;
+      ">
+      Media Mentions
+    </h2>
+  </div>
+  <div class="accordion" id="mediaMentionsAccordion">
+    <!-- Awards & Recognitions -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="mmHeadingOne">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mmCollapseOne" aria-expanded="false" aria-controls="mmCollapseOne">
+          <i class="bi bi-trophy" style="color:#696cc7; margin-right: 8px;"></i>
+          Awards & Recognitions
+        </button>
+      </h2>
+      <div id="mmCollapseOne" class="accordion-collapse collapse" aria-labelledby="mmHeadingOne" data-bs-parent="#mediaMentionsAccordion">
+        <div class="accordion-body">
+          <ul class="ps-3 mb-0" style="font-family: 'Poppins', sans-serif; font-size: 15px; color: #000000;">
+            <li>
+              Forbes 30 Under 30 MENA (2023) – Anastasia Denisova, Founder of AIcelerate, was recognized among the region’s most influential young leaders for her pioneering work in AI and PropTech.
+              <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">
+                Forbes Middle East – Anastasia Denisova, 30 Under 30 2023 <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Media Features -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="mmHeadingTwo">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mmCollapseTwo" aria-expanded="false" aria-controls="mmCollapseTwo">
+          <i class="bi bi-newspaper" style="color:#696cc7; margin-right: 8px;"></i>
+          Media Features
+        </button>
+      </h2>
+      <div id="mmCollapseTwo" class="accordion-collapse collapse" aria-labelledby="mmHeadingTwo" data-bs-parent="#mediaMentionsAccordion">
+        <div class="accordion-body">
+          <ul class="ps-3 mb-0" style="font-family: 'Poppins', sans-serif; font-size: 15px; color: #000000;">
+            <li>Forbes Middle East – Recognition as a young entrepreneur shaping the AI and PropTech industries.</li>
+            <li>Gulf News – Featured for scaling an AI real estate portal in Dubai generating $1M in monthly revenue — the foundation for AIcelerate’s expertise in AI-driven business growth. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">Gulf News <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>UAE Times – Profile on Anastasia’s entrepreneurial journey, showing how early success in PropTech evolved into the launch of AIcelerate. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">UAETimes <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>Arabian Business – Coverage of AI-driven real estate insights, reinforcing Anastasia’s leadership now fueling AIcelerate’s platform. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">Arabian Business <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>Bizpreneur Middle East – Story on women breaking barriers in tech, spotlighting Anastasia as an inspiration and positioning AIcelerate within the future of AI. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">BizpreneurME <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>Zawya – Highlight of UAE’s exploration of AI collaborations, underscoring the ecosystem where AIcelerate operates. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">Zawya <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>YourStory Gulf – Coverage of AI real estate innovation, highlighting Anastasia’s leadership track record that underpins AIcelerate. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">YourStory <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>HackerNoon – Interview on leadership and breaking barriers, linking Anastasia’s PropTech success and tech exit story to her role as founder of AIcelerate. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">HackerNoon <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>Business Chief EU – Insights on women in AI and innovation, showcasing Anastasia’s influence now channeled into AIcelerate’s mission. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">Business Chief EU <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>UAC Org (Arab Chamber of Commerce) – Recognition as a tech entrepreneur launching cross-border ventures, paving the way for AIcelerate. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">UAC Org <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>YouTube Coverage – Video interview showcasing Anastasia’s entrepreneurial journey and transition to building AIcelerate. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">YouTube <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conferences & Keynotes -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="mmHeadingThree">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mmCollapseThree" aria-expanded="false" aria-controls="mmCollapseThree">
+          <i class="bi bi-mic" style="color:#696cc7; margin-right: 8px;"></i>
+          Conferences & Keynotes
+        </button>
+      </h2>
+      <div id="mmCollapseThree" class="accordion-collapse collapse" aria-labelledby="mmHeadingThree" data-bs-parent="#mediaMentionsAccordion">
+        <div class="accordion-body">
+          <ul class="ps-3 mb-0" style="font-family: 'Poppins', sans-serif; font-size: 15px; color: #000000;">
+            <li>Global AI Summit (KSA) 2024 – Invited speaker on the future of AI, connecting PropTech innovation to broader enterprise applications like AIcelerate.</li>
+            <li>MoRe 2.0 Conference 2023 – Keynote speaker on entrepreneurship, AI, and the story of her successful tech exit, which laid the groundwork for founding AIcelerate.</li>
+            <li>Annual Investment Meeting (AIM Congress, UAE) 2025 – Speaker on AI, innovation, and scaling startups. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">AIM Speaker Profile <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+            <li>Finext Conference (Dubai) 2023 – Featured speaker on AI-driven business strategies, directly tied to AIcelerate’s vision. <br>
+              <a href="#" target="_blank" rel="noopener" style="color:#696cc7; text-decoration: none;">Finext Speaker <i class="bi bi-box-arrow-up-right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- who we are section -->
 <div class="whowecont container my-5">
   <div class="whowerow row align-items-center" style="padding-left: 2.3rem;">
@@ -2043,7 +2504,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     <script defer src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.10.0/dist/js/coreui.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
      <script async defer src="https://connect.facebook.net/en_US/fbevents.js"></script>
 
     
