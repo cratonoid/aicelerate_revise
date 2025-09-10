@@ -963,6 +963,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
             color: #5b5b5b;
             letter-spacing: 0.5px;
             font-weight: 100;
+            margin-bottom: 20px;
         ">
             Here's what sets us apart:
         </h2>
@@ -1137,7 +1138,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
         </h2>
     </div>
 
-    <div class="issues-grid row g-4 mt-2">
+    <div class="issues-grid row g-2 mt-2">
         <!-- Issue 1 -->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="issue-card border-0 shadow-sm h-100"
@@ -1411,136 +1412,35 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     </div>
 </div>
 
-<!-- Enhanced CSS for Issue Cards -->
+
+
+
+<!-- Key Issues Section End -->
+
 <style>
-    /* Issue Cards Responsive Enhancements */
-    .issues-grid {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    /* Ensure consistent card heights */
-    .issue-card {
-        min-height: 140px !important;
-        display: flex !important;
-        align-items: center !important;
-        height: 100% !important;
-    }
-
-    .issue-content {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    /* Force equal heights for all cards in a row */
-    .col-12.col-md-6.col-lg-4 {
-        display: flex !important;
-    }
-
-    /* Additional height enforcement */
-    .issues-grid .row {
-        align-items: stretch !important;
-    }
-
-    .issues-grid .col-12 {
+    /* Increase gap between cards - both vertical and horizontal */
+    .issues-grid .col-12.col-md-6.col-lg-4 {
         margin-bottom: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    .issue-card:hover .issue-icon-wrapper {
-        transform: scale(1.05);
-    }
-
-    .issue-card:hover .issue-icon-wrapper i {
-        transform: scale(1.1) !important;
-    }
-
-    /* Focus states for accessibility */
-    .issue-card:focus {
-        outline: 3px solid rgba(105, 108, 199, 0.5);
-        outline-offset: 2px;
-    }
-
-    /* Responsive Typography and Spacing */
     @media (max-width: 768px) {
-        .issue-card {
-            padding: 20px !important;
-            border-radius: 16px !important;
-        }
-
-        .issue-icon-wrapper {
-            width: 40px !important;
-            height: 40px !important;
-            margin-right: 16px !important;
-            border-radius: 10px !important;
-        }
-
-        .issue-icon-wrapper i {
-            font-size: 20px !important;
-        }
-
-        .issue-text {
-            font-size: 15px !important;
-            line-height: 1.4 !important;
+        .issues-grid .col-12.col-md-6.col-lg-4 {
+            margin-bottom: 1.25rem;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
         }
     }
 
     @media (max-width: 576px) {
-        .issue-card {
-            padding: 18px !important;
-            border-radius: 14px !important;
-        }
-
-        .issue-icon-wrapper {
-            width: 36px !important;
-            height: 36px !important;
-            margin-right: 14px !important;
-            border-radius: 8px !important;
-        }
-
-        .issue-icon-wrapper i {
-            font-size: 18px !important;
-        }
-
-        .issue-text {
-            font-size: 14px !important;
-            line-height: 1.4 !important;
-        }
-
-        .hwdesc1 {
-            font-size: 2rem !important;
-        }
-    }
-
-    /* Enhanced hover animations */
-    @media (hover: hover) {
-        .issue-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(105, 108, 199, 0.02), rgba(255, 255, 255, 0.02));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
-        }
-
-        .issue-card:hover::before {
-            opacity: 1;
-        }
-    }
-
-    /* Improved grid spacing for better visual hierarchy */
-    @media (min-width: 992px) {
-        .issues-grid .col-lg-4:nth-child(4),
-        .issues-grid .col-lg-4:nth-child(5) {
-            margin-top: 1rem;
+        .issues-grid .col-12.col-md-6.col-lg-4 {
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
         }
     }
 </style>
-<!-- Key Issues Section End -->
 
 <style>
   .accordion-section-title {
