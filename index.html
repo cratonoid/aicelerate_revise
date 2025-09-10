@@ -273,6 +273,8 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     border-radius: 0;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   .key-title{ font-size: 2.1rem; margin-bottom: 0.25rem; }
   .kf-heading{ font-size: 1.8rem; }
@@ -337,11 +339,54 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     background-color: #484cbd;
 }
 
+/* ===== GLOBAL SECTION SPACING SYSTEM ===== */
+/* Ensures equal margins across all sections while preserving all design elements */
+.section-spacing {
+    padding-top: 3rem !important;    /* 48px - Desktop standard */
+    padding-bottom: 3rem !important; /* 48px - Desktop standard */
+}
+
+/* Mobile responsive spacing - smaller but consistent */
+@media (max-width: 768px) {
+    .section-spacing {
+        padding-top: 2.5rem !important;    /* 40px - Mobile standard */
+        padding-bottom: 2.5rem !important; /* 40px - Mobile standard */
+    }
+}
+
+/* Override for sections that need to maintain their existing py-5 behavior */
+.section-spacing-py5 {
+    padding-top: 3rem !important;    /* py-5 equivalent */
+    padding-bottom: 3rem !important;
+}
+
+@media (max-width: 768px) {
+    .section-spacing-py5 {
+        padding-top: 2.5rem !important;    /* Responsive py-5 */
+        padding-bottom: 2.5rem !important;
+    }
+}
+
+/* Override for sections that currently use my-5 (margin instead of padding) */
+.section-spacing-my5 {
+    margin-top: 3rem !important;    /* my-5 equivalent but standardized */
+    margin-bottom: 3rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .section-spacing-my5 {
+        margin-top: 2.5rem !important;    /* Responsive my-5 */
+        margin-bottom: 2.5rem !important;
+    }
+}
+/* ===== END GLOBAL SECTION SPACING SYSTEM ===== */
 
 </style>
 
 <!-- Ideal For -->
- <div class="idealcont container py-5">
+ <div class="idealcont container section-spacing-py5">
   <div class="text-center mb-5">
     <h2 style="font-family: 'Overpass', sans-serif; font-weight: 900; font-size: 2.5rem; color: #696cc7; margin-bottom: 0px; letter-spacing: 0.5px;">Ideal For</h2>
     <h2 style="font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 900; color: #000000; margin-bottom: 2px; letter-spacing: 0.5px;">Businesses Selling High-Ticket Products and Services in</h2>
@@ -636,7 +681,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 <!-- How it works -->
-<div class="hwcont container-fluid py-5">
+<div class="hwcont container-fluid section-spacing-py5">
     <div class="hw-content-wrapper">
          <div class="hwhead text-center ">
                 <h1 class="mb-5" style="
@@ -911,7 +956,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
  <!-- How we are different -->
- <div class="hwwe container py-5">
+ <div class="hwwe container section-spacing-py5">
     <div class="text-center">
         <h2 class="hwdesc1" style="
             font-family: 'Overpass', sans-serif;
@@ -1099,7 +1144,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 <!--  How we are Section End -->
 
 <!-- Key Issues That We Solve -->
-<div class="hwwe container py-5">
+<div class="hwwe container section-spacing-py5">
     <div class="text-center">
         <h2 class="hwdesc1" style="
             font-family: 'Overpass', sans-serif;
@@ -1566,7 +1611,8 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
         }
 
         .idealcont{
-            margin-top: -6rem !important;
+            margin-top: 2rem !important;
+            padding-top: 3rem !important;
         }
     }
 </style>
@@ -1724,7 +1770,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   </div>
 </div>
 
-<div class="redcol container my-5 mobileVersion ">
+<div class="redcol container section-spacing-my5 mobileVersion ">
 <h2 class="" style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
@@ -1906,7 +1952,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 <!-- Guarantee Start -->
-<div class="container-xxl py-5">
+<div class="container-xxl section-spacing-py5">
     <div class="container">
         <div class="row g-5 align-items-center">
 
@@ -2077,7 +2123,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 <!-- reviews section -->
 
-<div class="container laptopVersion" style="background: no-repeat; background-image: url('https://cratonoid.github.io/aicelerate_revise/img/Asset85.jpg'); background-position: center; min-height: 650px;">
+<div class="container laptopVersion section-spacing" style="background: no-repeat; background-image: url('https://cratonoid.github.io/aicelerate_revise/img/Asset85.jpg'); background-position: center; min-height: 650px;">
   <!-- Heading -->
   <div class="text-center mb-5 py-5">
     <h2 style="
@@ -2112,7 +2158,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   </div>
 </div>
 
-<div class="container my-5 rmv mobileVersion">
+<div class="container section-spacing-my5 rmv mobileVersion">
   <!-- Heading -->
   <div class="text-center mb-5 py-5">
     <h2 style="
@@ -2226,7 +2272,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
   </div>
 </div> -->
-<div class="redcol container my-5">
+<div class="redcol container section-spacing-my5">
   <div class="row align-items-center p-4">
 
     <!-- Heading: Always first -->
@@ -2279,7 +2325,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 <!-- Case Studies Section (Accordion) -->
-<div class="container my-5">
+<div class="container section-spacing-my5">
 
 
   <div class="accordion" id="caseStudiesAccordion">
@@ -2413,7 +2459,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 </div>
 
 <!-- Media Mentions Section -->
-<div class="container my-5 media-mentions">
+<div class="container section-spacing-my5 media-mentions">
   <div class="text-center mb-4">
     <h2 style="
           font-family: 'Overpass', sans-serif;
@@ -2503,7 +2549,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 </div>
 
 <!-- who we are section -->
-<div class="whowecont container my-5">
+<div class="whowecont container section-spacing-my5">
   <div class="whowerow row align-items-center" style="padding-left: 2.3rem;">
     <!-- Heading: Always first -->
     <div class="textc col-12">
