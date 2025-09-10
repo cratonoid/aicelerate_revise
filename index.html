@@ -1187,11 +1187,9 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
                         align-items: center;
                         justify-content: center;
                         margin-right: 20px;
-                        background: rgba(105, 108, 199, 0.1);
-                        border-radius: 12px;
                         transition: all 0.3s ease;
                     ">
-                        <i class="bi bi-person-x" style="font-size: 24px; color: #696cc7; transition: transform 0.3s ease;"></i>
+                        <i class="bi bi-person-x" style="font-size: 42px; color: #696cc7; font-weight: 900; -webkit-text-stroke: 1.5px #696cc7; text-shadow: 0 0 2px #696cc7; transition: transform 0.3s ease;"></i>
                     </div>
                     <p class="issue-text mb-0" style="
                         font-family: 'Poppins', sans-serif;
@@ -1234,11 +1232,9 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
                         align-items: center;
                         justify-content: center;
                         margin-right: 20px;
-                        background: rgba(105, 108, 199, 0.1);
-                        border-radius: 12px;
                         transition: all 0.3s ease;
                     ">
-                        <i class="bi bi-cash-coin" style="font-size: 24px; color: #696cc7; transition: transform 0.3s ease;"></i>
+                        <i class="bi bi-cash-coin" style="font-size: 42px; color: #696cc7; font-weight: 900; -webkit-text-stroke: 1.5px #696cc7; text-shadow: 0 0 2px #696cc7; transition: transform 0.3s ease;"></i>
                     </div>
                     <p class="issue-text mb-0" style="
                         font-family: 'Poppins', sans-serif;
@@ -1281,11 +1277,9 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
                         align-items: center;
                         justify-content: center;
                         margin-right: 20px;
-                        background: rgba(105, 108, 199, 0.1);
-                        border-radius: 12px;
                         transition: all 0.3s ease;
                     ">
-                        <i class="bi bi-ban" style="font-size: 24px; color: #696cc7; transition: transform 0.3s ease;"></i>
+                        <i class="bi bi-ban" style="font-size: 36px; color: #696cc7; font-weight: 900; -webkit-text-stroke: 1.5px #696cc7; text-shadow: 0 0 2px #696cc7; transition: transform 0.3s ease;"></i>
                     </div>
                     <p class="issue-text mb-0" style="
                         font-family: 'Poppins', sans-serif;
@@ -1328,11 +1322,9 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
                         align-items: center;
                         justify-content: center;
                         margin-right: 20px;
-                        background: rgba(105, 108, 199, 0.1);
-                        border-radius: 12px;
                         transition: all 0.3s ease;
                     ">
-                        <i class="bi bi-rocket-takeoff" style="font-size: 24px; color: #696cc7; transition: transform 0.3s ease;"></i>
+                        <i class="bi bi-rocket-takeoff" style="font-size: 42px; color: #696cc7; font-weight: 900; -webkit-text-stroke: 1.5px #696cc7; text-shadow: 0 0 2px #696cc7; transition: transform 0.3s ease;"></i>
                     </div>
                     <p class="issue-text mb-0" style="
                         font-family: 'Poppins', sans-serif;
@@ -1375,11 +1367,9 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
                         align-items: center;
                         justify-content: center;
                         margin-right: 20px;
-                        background: rgba(105, 108, 199, 0.1);
-                        border-radius: 12px;
                         transition: all 0.3s ease;
                     ">
-                        <i class="bi bi-bullseye" style="font-size: 24px; color: #696cc7; transition: transform 0.3s ease;"></i>
+                        <i class="bi bi-bullseye" style="font-size: 42px; color: #696cc7; font-weight: 900; -webkit-text-stroke: 1.5px #696cc7; text-shadow: 0 0 2px #696cc7; transition: transform 0.3s ease;"></i>
                     </div>
                     <p class="issue-text mb-0" style="
                         font-family: 'Poppins', sans-serif;
@@ -1422,11 +1412,9 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
                         align-items: center;
                         justify-content: center;
                         margin-right: 20px;
-                        background: rgba(105, 108, 199, 0.1);
-                        border-radius: 12px;
                         transition: all 0.3s ease;
                     ">
-                        <i class="bi bi-person-x" style="font-size: 24px; color: #696cc7; transition: transform 0.3s ease;"></i>
+                        <i class="bi bi-telephone-x" style="font-size: 42px; color: #696cc7; font-weight: 900; -webkit-text-stroke: 1.5px #696cc7; text-shadow: 0 0 2px #696cc7; transition: transform 0.3s ease;"></i>
                     </div>
                     <p class="issue-text mb-0" style="
                         font-family: 'Poppins', sans-serif;
@@ -1454,8 +1442,35 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
         margin: 0 auto;
     }
 
+    /* Ensure consistent card heights */
+    .issue-card {
+        min-height: 140px !important;
+        display: flex !important;
+        align-items: center !important;
+        height: 100% !important;
+    }
+
+    .issue-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Force equal heights for all cards in a row */
+    .col-12.col-md-6.col-lg-4 {
+        display: flex !important;
+    }
+
+    /* Additional height enforcement */
+    .issues-grid .row {
+        align-items: stretch !important;
+    }
+
+    .issues-grid .col-12 {
+        margin-bottom: 1.5rem;
+    }
+
     .issue-card:hover .issue-icon-wrapper {
-        background: rgba(105, 108, 199, 0.2) !important;
         transform: scale(1.05);
     }
 
