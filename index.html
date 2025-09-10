@@ -251,7 +251,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 .kf-heading{
   font-family: 'League Spartan', sans-serif;
   font-weight: 800;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #1f2230;
   line-height: 1.2;
 }
@@ -1469,6 +1469,36 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   /* Reduce font size for case studies accordion buttons on all screen sizes */
   #caseStudiesAccordion .accordion-button {
     font-size: 1.2rem;
+    background-color: #f8f9fa !important;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+  }
+
+  #caseStudiesAccordion .accordion-button:hover {
+    background-color: #e9ecef !important;
+    border-color: #696cc7;
+  }
+
+  #caseStudiesAccordion .accordion-button:not(.collapsed) {
+    background-color: #696cc7 !important;
+    color: white !important;
+    border-color: #696cc7;
+  }
+
+  #caseStudiesAccordion .accordion-button:not(.collapsed) i {
+    color: white !important;
+  }
+
+  #caseStudiesAccordion .accordion-item {
+    border: 1px solid #e9ecef;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  #caseStudiesAccordion .accordion-body {
+    background-color: #ffffff;
+    border-top: 1px solid #e9ecef;
   }
 
   .accordion-item .accordion-button i {
@@ -2057,7 +2087,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 <div class="container laptopVersion section-spacing-py5" style="background: no-repeat; background-image: url('https://cratonoid.github.io/aicelerate_revise/img/Asset85.jpg'); background-position: center; min-height: 650px;">
   <!-- Heading -->
-  <div class="text-center mb-5 py-5">
+  <div class="text-center mb-5">
     <h2 style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
@@ -2256,37 +2286,41 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 <!-- Case Studies Section (Accordion) -->
-<div class="container section-spacing-my5">
-
+<div class="container ">
+  
 
   <div class="accordion" id="caseStudiesAccordion">
     <!-- Case 1 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="csHeadingOne">
-        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseOne" aria-expanded="false" aria-controls="csCollapseOne">
-          Success Case M87 (Gaming & Web3, Thailand)
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="csHeadingSix">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseSix" aria-expanded="false" aria-controls="csCollapseSix">
+          <i class="bi bi-heart-pulse me-3" style="color: #696cc7; font-size: 1.5rem;"></i>
+          Success Case: X-Technology FZCO (VR Therapy & Neuroscience, UAE)
         </button>
       </h2>
-      <div id="csCollapseOne" class="accordion-collapse collapse" aria-labelledby="csHeadingOne" data-bs-parent="#caseStudiesAccordion">
+      <div id="csCollapseSix" class="accordion-collapse collapse" aria-labelledby="csHeadingSix" data-bs-parent="#caseStudiesAccordion">
         <div class="accordion-body">
-          <p><strong>Thesis:</strong> AIcelerate built an investor pipeline that converted into funding for a Web3 startup.</p>
-          <p><strong>Challenge:</strong> Preparing for a seed round, M87 needed to identify and engage relevant investors and strategic partners across South Asia.</p>
-          <p><strong>Strategy:</strong> Leveraged AIcelerate to generate a hyper-targeted investor list and run personalized outreach — without SDRs or manual research.</p>
+          <p><strong>Thesis:</strong> AIcelerate converted scientific validation into pilots with top hospitals & universities.</p>
+          <p><strong>Challenge:</strong> Needed validation with clinical partners in UAE, Saudi, and Bahrain, while also initiating fundraising.</p>
+          <p><strong>Strategy:</strong> AIcelerate supported personalized outreach to healthcare leaders, hospitals, universities, and investors.</p>
           <ul class="ps-3 mb-0">
-            <li>Raised $500K USD in seed funding</li>
-            <li>Prioritized pool of active investors and partners</li>
-            <li>Active partnership discussions in South Asia</li>
+            <li>Signed pilots with Burjeel & Cleveland Clinic</li>
+            <li>Initiated research collaboration with American University</li>
+            <li>Collaboration with King Saud University for clinical validation</li>
+            <li>Healthcare investor discussions opened</li>
           </ul>
         </div>
       </div>
     </div>
+    
 
     
     <!-- Case 3 -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="csHeadingThree">
         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseThree" aria-expanded="false" aria-controls="csCollapseThree">
-          Success Case AI Consulting FZCO (Enterprise IT Consulting, UAE)
+          <i class="bi bi-building me-3" style="color: #696cc7; font-size: 1.5rem;"></i>
+          Success Case: AI Consulting FZCO (Enterprise IT Consulting, UAE)
         </button>
       </h2>
       <div id="csCollapseThree" class="accordion-collapse collapse" aria-labelledby="csHeadingThree" data-bs-parent="#caseStudiesAccordion">
@@ -2307,7 +2341,8 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     <div class="accordion-item">
       <h2 class="accordion-header" id="csHeadingFour">
         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseFour" aria-expanded="false" aria-controls="csCollapseFour">
-          Success Case HoloFair Technologies Ltd (Immersive 3D, UAE)
+          <i class="bi bi-vr me-3" style="color: #696cc7; font-size: 1.5rem;"></i>
+          Success Case: HoloFair Technologies Ltd (Immersive 3D, UAE)
         </button>
       </h2>
       <div id="csCollapseFour" class="accordion-collapse collapse" aria-labelledby="csHeadingFour" data-bs-parent="#caseStudiesAccordion">
@@ -2328,7 +2363,8 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     <div class="accordion-item">
       <h2 class="accordion-header" id="csHeadingFive">
         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseFive" aria-expanded="false" aria-controls="csCollapseFive">
-          Success Case Buildroid (ConTech & Robotics, UAE/USA)
+          <i class="bi bi-robot me-3" style="color: #696cc7; font-size: 1.5rem;"></i>
+          Success Case: Buildroid (ConTech & Robotics, UAE/USA)
         </button>
       </h2>
       <div id="csCollapseFive" class="accordion-collapse collapse" aria-labelledby="csHeadingFive" data-bs-parent="#caseStudiesAccordion">
@@ -2346,26 +2382,27 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     </div>
 
     <!-- Case 6 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="csHeadingSix">
-        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseSix" aria-expanded="false" aria-controls="csCollapseSix">
-          Success Case X-Technology FZCO (VR Therapy & Neuroscience, UAE)
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="csHeadingOne">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseOne" aria-expanded="false" aria-controls="csCollapseOne">
+          <i class="bi bi-controller me-3" style="color: #696cc7; font-size: 1.5rem;"></i>
+          Success Case: M87 (Gaming & Web3, Thailand)
         </button>
       </h2>
-      <div id="csCollapseSix" class="accordion-collapse collapse" aria-labelledby="csHeadingSix" data-bs-parent="#caseStudiesAccordion">
+      <div id="csCollapseOne" class="accordion-collapse collapse" aria-labelledby="csHeadingOne" data-bs-parent="#caseStudiesAccordion">
         <div class="accordion-body">
-          <p><strong>Thesis:</strong> AIcelerate converted scientific validation into pilots with top hospitals & universities.</p>
-          <p><strong>Challenge:</strong> Needed validation with clinical partners in UAE, Saudi, and Bahrain, while also initiating fundraising.</p>
-          <p><strong>Strategy:</strong> AIcelerate supported personalized outreach to healthcare leaders, hospitals, universities, and investors.</p>
+          <p><strong>Thesis:</strong> AIcelerate built an investor pipeline that converted into funding for a Web3 startup.</p>
+          <p><strong>Challenge:</strong> Preparing for a seed round, M87 needed to identify and engage relevant investors and strategic partners across South Asia.</p>
+          <p><strong>Strategy:</strong> Leveraged AIcelerate to generate a hyper-targeted investor list and run personalized outreach — without SDRs or manual research.</p>
           <ul class="ps-3 mb-0">
-            <li>Signed pilots with Burjeel & Cleveland Clinic</li>
-            <li>Initiated research collaboration with American University</li>
-            <li>Collaboration with King Saud University for clinical validation</li>
-            <li>Healthcare investor discussions opened</li>
+            <li>Raised $500K USD in seed funding</li>
+            <li>Prioritized pool of active investors and partners</li>
+            <li>Active partnership discussions in South Asia</li>
           </ul>
         </div>
       </div>
     </div>
+    
   </div>
 </div>
 
