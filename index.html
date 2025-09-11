@@ -173,9 +173,9 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
     <!-- Second Banner Section -->
     <div class="position-relative w-100 heroSection1 key-figures">
-        <div class="container section-spacing-py5">
-            <h2 class="text-center key-title">Key Figures</h2>
-            <div class="row align-items-center justify-content-center mt-1 g-3 g-md-4">
+        <div class="container section-spacing-standard">
+            <h2 class="text-center key-title content-spacing">Key Figures</h2>
+            <div class="row align-items-center justify-content-center g-3 g-md-4">
                 <div class="kf-col col-12 col-md-4 d-flex flex-column align-items-center text-center mb-2 mb-md-0">
                     <div class="kf-icon"><i class="bi bi-envelope-open"></i></div>
                     <div class="kf-heading">40% Response Rate</div>
@@ -273,10 +273,8 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     border-radius: 0;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    padding-bottom: 3rem;
-    margin-bottom: 2rem;
   }
-  .key-title{ font-size: 2.1rem; margin-bottom: 0.25rem; }
+  .key-title{ font-size: 2.1rem; }
   .kf-heading{ font-size: 1.8rem; }
   .kf-sub{ font-size: 0.95rem; }
 }
@@ -340,57 +338,108 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     background-color: #484cbd;
 }
 
-/* ===== GLOBAL SECTION SPACING SYSTEM ===== */
-/* Ensures equal margins across all sections while preserving all design elements */
-.section-spacing {
-    padding-top: 3rem !important;    /* 48px - Desktop standard */
-    padding-bottom: 3rem !important; /* 48px - Desktop standard */
+/* ===== ENHANCED GLOBAL SECTION SPACING SYSTEM ===== */
+/* Perfect consistency across all sections with visual rhythm */
+
+/* PRIMARY SPACING CLASS - Use this for all main sections */
+.section-spacing-standard {
+    padding-top: 4rem !important;    /* 64px - Desktop standard */
+    padding-bottom: 4rem !important; /* 64px - Desktop standard */
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-/* Mobile responsive spacing - smaller but consistent */
+/* Mobile responsive spacing - maintains proportional consistency */
 @media (max-width: 768px) {
-    .section-spacing {
-        padding-top: 2.5rem !important;    /* 40px - Mobile standard */
-        padding-bottom: 2.5rem !important; /* 40px - Mobile standard */
+    .section-spacing-standard {
+        padding-top: 3rem !important;    /* 48px - Mobile standard */
+        padding-bottom: 3rem !important; /* 48px - Mobile standard */
     }
 }
 
-/* Override for sections that need to maintain their existing py-5 behavior */
+/* LEGACY SUPPORT - Updated to match new standard */
 .section-spacing-py5 {
-    padding-top: 3rem !important;    /* py-5 equivalent */
-    padding-bottom: 3rem !important;
+    padding-top: 4rem !important;    /* Updated to match new standard */
+    padding-bottom: 4rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 @media (max-width: 768px) {
     .section-spacing-py5 {
-        padding-top: 2.5rem !important;    /* Responsive py-5 */
-        padding-bottom: 2.5rem !important;
+        padding-top: 3rem !important;    /* Updated mobile spacing */
+        padding-bottom: 3rem !important;
     }
 }
 
-/* Override for sections that currently use my-5 (margin instead of padding) */
-.section-spacing-my5 {
-    margin-top: 3rem !important;    /* my-5 equivalent but standardized */
-    margin-bottom: 3rem !important;
+/* HERO SECTION SPACING - Special case for hero sections */
+.section-spacing-hero {
+    padding-top: 0 !important;
+    padding-bottom: 4rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .section-spacing-hero {
+        padding-bottom: 3rem !important;
+    }
+}
+
+/* BUTTON SPACING UTILITIES */
+.btn-spacing-standard {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+@media (max-width: 768px) {
+    .btn-spacing-standard {
+        margin-top: 1rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    /* Optimized spacing for How It Works section */
+    .hwcont .mobileVersion .row:last-child {
+        margin-top: 0.5rem !important;
+    }
+}
+
+/* BUTTON HEIGHT CONSISTENCY - Mobile */
+@media (max-width: 768px) {
+    .hwbtn, .ltcontbtn, .bookbtn {
+        padding: 0.5rem 1.5rem !important;
+        font-size: 1.7rem !important;
+        font-weight: 600 !important;
+    }
+}
+
+/* REMOVE UNWANTED SPACING */
+.no-extra-spacing {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 
+/* CONTENT SPACING WITHIN SECTIONS */
+.content-spacing {
+    margin-bottom: 2rem !important;
+}
+
 @media (max-width: 768px) {
-    .section-spacing-my5 {
-        margin-top: 2.5rem !important;    /* Responsive my-5 */
-        margin-bottom: 2.5rem !important;
+    .content-spacing {
+        margin-bottom: 1.5rem !important;
     }
 }
-/* ===== END GLOBAL SECTION SPACING SYSTEM ===== */
+/* ===== END ENHANCED GLOBAL SECTION SPACING SYSTEM ===== */
 
 </style>
 
 <!-- Ideal For -->
- <div class="idealcont container section-spacing-py5">
-  <div class="text-center mb-5">
-    <h2 style="font-family: 'Overpass', sans-serif; font-weight: 900; font-size: 2.5rem; color: #696cc7; margin-bottom: 0px; letter-spacing: 0.5px;">Ideal For</h2>
-    <h2 style="font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 900; color: #000000; margin-bottom: 2px; letter-spacing: 0.5px;">Ideal for Businesses Selling High-Ticket Digital Products in</h2>
+ <div class="idealcont container section-spacing-standard">
+  <div class="text-center content-spacing">
+    <h2 style="font-family: 'Overpass', sans-serif; font-weight: 900; font-size: 2.5rem; color: #696cc7; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Ideal For</h2>
+    <h2 style="font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 900; color: #000000; margin-bottom: 0; letter-spacing: 0.5px;">Ideal for Businesses Selling High-Ticket Digital Products in</h2>
     <!-- <h2 style="font-family: 'Poppins', sans-serif; font-size: 15px; color: #5b5b5b; letter-spacing: 0.5px;">We’ve built high-performing outbound funnels across sectors like:</h2>      -->
   </div>
 
@@ -565,10 +614,8 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
         </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row btn-spacing-standard">
             <div class="col-12 d-flex justify-content-center">
-
-
                     <a href="#" class="ltcontbtn hwbtn btn btn-primary py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
                     font-size: 18px;
                     background-color: #696cc7;
@@ -683,16 +730,16 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 <!-- How it works -->
-<div class="hwcont container-fluid section-spacing-py5">
+<div class="hwcont container-fluid section-spacing-standard">
     <div class="hw-content-wrapper">
-         <div class="hwhead text-center ">
-                <h1 class="mb-5" style="
+         <div class="hwhead text-center">
+                <h1 class="content-spacing" style="
                     font-family: 'Overpass', sans-serif;
                     font-size: 2.5rem;
                     color: #5f5fb3;
                     font-weight: 700;
                     position: relative;
-
+                    margin-bottom: 0;
                 ">How It Works</h1>
             </div>
         <div class="hwsec row g-5" style="
@@ -700,23 +747,33 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     justify-content: center;
 ">
 
-            <div class=" container  mt-25 mobileVersion" style="background-image: url('https://cratonoid.github.io/aicelerate_revise/img/Asset 137.png'); background-size: cover; background-position: center; min-height: 520px;">
-                <div class="col-12 d-flex justify-content-center mobileVersion" style="padding-top: 137%;">
-                <a href="#" class="ltcontbtn btn btn-primary px-3 py-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
-                    font-size: 9px;
-                    font-weight: 100;
-                    background-color: #696cc7;
-                    color: #ffffff;
-                    border-radius: 30px;
-                    box-shadow: 0 4px 8px rgba(59, 101, 255, 0.382);
-                    transition: all 0.4s ease;
-                    border-color: #696cc7;
-                    font-family: 'Montserrat', sans-serif;
-                "
-                onmouseover="this.style.backgroundColor='#484cbd';"
-                onmouseout="this.style.backgroundColor='#696cc7';">
-                    Let's Connect         </a>
-            </div>
+            <!-- Mobile Version Content -->
+            <div class="container mobileVersion" style="padding: 2rem 1rem;">
+                <!-- Mobile Image -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://cratonoid.github.io/aicelerate_revise/img/Asset 137.png" alt="How it works" class="img-fluid" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+                    </div>
+                </div>
+
+                <!-- Mobile Button -->
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <a href="#" class="ltcontbtn btn btn-primary px-3 py-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
+                            background-color: #696cc7;
+                            color: #ffffff;
+                            border-radius: 30px;
+                            box-shadow: 0 4px 8px rgba(59, 101, 255, 0.382);
+                            transition: all 0.4s ease;
+                            border-color: #696cc7;
+                            font-family: 'Montserrat', sans-serif;
+                        "
+                        onmouseover="this.style.backgroundColor='#484cbd';"
+                        onmouseout="this.style.backgroundColor='#696cc7';">
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- Text Section -->
             <div class="col-lg-6 lttext laptopVersion">
@@ -797,7 +854,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
                 <img src="https://cratonoid.github.io/aicelerate_revise/img/how_sec.webp" alt="hw_sec_img" class="hw_sec_img img-fluid rounded ">
 
 
-            <div class="row hwbtnrw">
+            <div class="row hwbtnrw btn-spacing-standard">
             <div class="col-12 d-flex justify-content-center">
                 <a href="#" class="hwbtn btn btn-primary py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
                     font-size: 18px;
@@ -856,7 +913,6 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     padding-bottom: 1rem !important;
     }
     .hwcont{
-        padding-bottom: 0rem !important;
         background-color: #edeef5;
         width: 100%;
         margin: 0;
@@ -897,18 +953,10 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
     @media (max-width: 768px) {
       .hwsec{
-        padding-top: 4rem;
-        padding-bottom: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
       }
-        .ltcontbtn{
-          padding: 1% 40px !important;
-          font-weight: 600 !important;
-            font-size: 145% !important;
-        }
-        .bookbtn{
-          padding: 10px 40px !important;
 
-        }
     .hwcont{
         background-color: #eeeff4;
         width: 100%;
@@ -935,14 +983,14 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
  <!-- How we are different -->
- <div class="hwwe container section-spacing-py5">
-    <div class="text-center">
+ <div class="hwwe container section-spacing-standard">
+    <div class="text-center content-spacing">
         <h2 class="hwdesc1" style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
             font-size: 2.5rem;
             color: #696cc7;
-            margin-bottom: 0px;
+            margin-bottom: 0.5rem;
             letter-spacing: 0.5px;
         ">
             How We Are Different and Better
@@ -952,7 +1000,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
             font-size: 25px;
             font-weight: 900;
             color: #000000;
-            margin-bottom: 15px;
+            margin-bottom: 0.5rem;
             letter-spacing: 0.5px;
         ">
             Alcelerate isn't just another tool - it's your growth engine
@@ -963,7 +1011,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
             color: #5b5b5b;
             letter-spacing: 0.5px;
             font-weight: 100;
-            margin-bottom: 20px;
+            margin-bottom: 0;
         ">
             Here's what sets us apart:
         </h2>
@@ -1124,14 +1172,14 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 <!--  How we are Section End -->
 
 <!-- Key Issues That We Solve -->
-<div class="hwwe container section-spacing-py5">
-    <div class="text-center">
+<div class="hwwe container section-spacing-standard">
+    <div class="text-center content-spacing">
         <h2 class="hwdesc1" style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
             font-size: 2.5rem;
             color: #696cc7;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             letter-spacing: 0.5px;
         ">
             Key Issues That We Solve
@@ -1582,15 +1630,15 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 </style>
 
 
-<div class="container laptopVersion section-spacing-py5">
+<div class="container laptopVersion section-spacing-standard">
   <div class="accordion" id="leadComparison">
-    <div class="accordion-section-title">
+    <div class="accordion-section-title content-spacing">
         <h2 style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
             font-size: 2rem;
             color: #696cc7;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             letter-spacing: 0.5px;
         ">
             How We Compare with Other Lead Generation Tactics
@@ -1734,13 +1782,13 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   </div>
 </div>
 
-<div class="redcol container section-spacing-py5 mobileVersion ">
-<h2 class="" style="
+<div class="redcol container section-spacing-standard mobileVersion ">
+<h2 class="content-spacing" style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
             font-size: 2.6rem;
             color: #696cc7;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             letter-spacing: 0.5px;
             text-align: center;
         ">
@@ -1916,18 +1964,18 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 <!-- Guarantee Start -->
-<div class="container-xxl section-spacing-py5">
+<div class="container-xxl section-spacing-standard">
     <div class="container">
         <div class="row g-5 align-items-center">
 
             <!-- Image Section -->
             <div class="redcol col-lg-6 "style="text-align:center">
-                <h2 class="grtxt" style="
+                <h2 class="grtxt content-spacing" style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
             font-size: 2.2rem;
             color: #696cc7;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             letter-spacing: 0.5px;
         ">
             Our Guarantee
@@ -2040,7 +2088,6 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 @media (max-width: 768px) {
-    /* Removed .redcol negative margin override to maintain consistent section spacing */
     .grtxt{
         font-size: 2.3rem !important;
     }
@@ -2070,7 +2117,6 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 .wedel{
     text-align: center !important;
-    margin-top: -2rem !important;
     font-size: 23px !important;
 }
 }
@@ -2085,15 +2131,15 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 <!-- reviews section -->
 
-<div class="container laptopVersion section-spacing-py5" style="background: no-repeat; background-image: url('https://cratonoid.github.io/aicelerate_revise/img/Asset85.jpg'); background-position: center; min-height: 650px;">
+<div class="container laptopVersion section-spacing-standard" style="background: no-repeat; background-image: url('https://cratonoid.github.io/aicelerate_revise/img/Asset85.jpg'); background-position: center; min-height: 650px;">
   <!-- Heading -->
-  <div class="text-center mb-5">
+  <div class="text-center content-spacing">
     <h2 style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
             font-size: 2.5rem;
             color: #696cc7;
-            margin-bottom: 0px;
+            margin-bottom: 0.5rem;
             letter-spacing: 0.5px;
         ">
             Reviews
@@ -2103,7 +2149,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
             font-size: 22px;
             font-weight: 900;
             color: #000000;
-            margin-bottom: 2px;
+            margin-bottom: 0.5rem;
             letter-spacing: 0.5px;
         ">
            Real Users. Real Results. Real Revenue.
@@ -2113,6 +2159,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
             font-size: 15px;
             color: #5b5b5b;
             letter-spacing: 0.5px;
+            margin-bottom: 0;
         ">
              Don’t just take our word for it – here’s what our clients say:
         </h2>
@@ -2120,15 +2167,15 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   </div>
 </div>
 
-<div class="container section-spacing-py5 rmv mobileVersion">
+<div class="container section-spacing-standard rmv mobileVersion">
   <!-- Heading -->
-  <div class="text-center mb-5 py-5">
+  <div class="text-center content-spacing">
     <h2 style="
             font-family: 'Overpass', sans-serif;
             font-weight: 900;
             font-size: 2.5rem;
             color: #696cc7;
-            margin-bottom: 0px;
+            margin-bottom: 0.5rem;
             letter-spacing: 0.5px;
         ">
             Reviews
@@ -2138,7 +2185,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
             font-size: 22px;
             font-weight: 900;
             color: #000000;
-            margin-bottom: 2px;
+            margin-bottom: 0;
             letter-spacing: 0.5px;
         ">
            Real Users. Real Results. Real Revenue.
@@ -2234,17 +2281,17 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
   </div>
 </div> -->
-<div class="redcol container section-spacing-py5">
+<div class="redcol container section-spacing-standard">
   <div class="row align-items-center p-4">
 
     <!-- Heading: Always first -->
-    <div class="textc col-12">
+    <div class="textc col-12 content-spacing">
       <h2 style="
           font-family: 'Overpass', sans-serif;
           font-weight: 900;
           font-size: 2.5rem;
           color: #696cc7;
-          margin-bottom: 0px;
+          margin-bottom: 0;
           letter-spacing: 0.5px;
       ">
         Success Stories
@@ -2407,14 +2454,14 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 </div>
 
 <!-- Media Mentions Section -->
-<div class="container section-spacing-py5 media-mentions">
-  <div class="text-center mb-5">
+<div class="container section-spacing-standard media-mentions">
+  <div class="text-center content-spacing">
     <h2 style="
           font-family: 'Overpass', sans-serif;
           font-weight: 900;
           font-size: 2.5rem;
           color: #696cc7;
-          margin-bottom: 0px;
+          margin-bottom: 0;
           letter-spacing: 0.5px;
       ">
       Media Mentions
@@ -2814,15 +2861,15 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 </style>
 
 <!-- who we are section -->
-<div class="who-we-are-section container section-spacing-py5">
+<div class="who-we-are-section container section-spacing-standard">
   <!-- Section Heading -->
-  <div class="text-center mb-5">
+  <div class="text-center content-spacing">
     <h2 class="section-title" style="
         font-family: 'Overpass', sans-serif;
         font-weight: 900;
         font-size: 2.5rem;
         color: #696cc7;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
         letter-spacing: 0.5px;
     ">
       Who We Are
@@ -2830,7 +2877,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   </div>
 
   <!-- Main Description Text (Justified) -->
-  <div class="main-description mb-5">
+  <div class="main-description content-spacing">
     <p class="justified-text" style="
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
@@ -2848,7 +2895,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   </div>
 
   <!-- Team Members Grid -->
-  <div class="team-grid row justify-content-center mb-5">
+  <div class="team-grid row justify-content-center content-spacing">
     <!-- Team Member 1 - Anastasia -->
     <div class="col-lg-4 col-md-6 col-12 mb-4">
       <div class="team-member text-center">
@@ -2956,7 +3003,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   </div>
 
   <!-- Centered CTA Button -->
-  <div class="cta-section text-center">
+  <div class="cta-section text-center btn-spacing-standard">
     <a href="#" class="hwbtn btn btn-primary py-3 px-5 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
         font-size: 18px;
         background-color: #696cc7;
@@ -2980,7 +3027,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 <style>
 /* Who We Are Section */
 .who-we-are-section {
-  padding: 4rem 0;
+  /* Spacing handled by section-spacing-standard class */
 }
 
 /* Remove decorative borders from Who We Are title */
@@ -2990,7 +3037,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 }
 
 .main-description {
-  margin-bottom: 3rem;
+  /* Spacing handled by content-spacing class */
 }
 
 .justified-text {
@@ -3000,7 +3047,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 /* Team Grid */
 .team-grid {
-  margin-bottom: 3rem;
+  /* Spacing handled by content-spacing class */
 }
 
 .team-member {
@@ -3049,22 +3096,17 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 /* CTA Section */
 .cta-section {
-  margin-top: 2rem;
+  /* Spacing handled by btn-spacing-standard class */
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .who-we-are-section {
-    padding: 3rem 0;
-  }
-
   .justified-text {
     padding: 0 2rem;
   }
 }
 
 @media (max-width: 992px) {
-
   .justified-text {
     font-size: 15px;
     padding: 0 1.5rem;
@@ -3072,26 +3114,10 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 }
 
 @media (max-width: 768px) {
-  .who-we-are-section {
-    padding: 2rem 0;
-  }
-
-  .section-title {
-    margin-bottom: 1.5rem !important;
-  }
-
   .justified-text {
     font-size: 14px;
     padding: 0 1rem;
     text-align: left;
-  }
-
-  .main-description {
-    margin-bottom: 2rem;
-  }
-
-  .team-grid {
-    margin-bottom: 2rem;
   }
 
   .team-member {
@@ -4427,9 +4453,9 @@ document.addEventListener("DOMContentLoaded", function() {
         function startAutoScroll() {
             if (!isAutoScrolling) return;
 
-            // Different speeds for mobile vs desktop
+            // Much faster speeds for continuous scrolling feel
             const isMobile = window.innerWidth <= 768;
-            const scrollDelay = isMobile ? 6000 : 5000; // 6 seconds for mobile, 5 seconds for desktop
+            const scrollDelay = isMobile ? 1200 : 1000; // 1.2 seconds for mobile, 1 second for desktop
 
             autoScrollInterval = setInterval(() => {
                 const { scrollAmount } = getCardDimensions();
@@ -4448,7 +4474,7 @@ document.addEventListener("DOMContentLoaded", function() {
         function resetAutoScroll() {
             clearInterval(autoScrollInterval);
             const isMobile = window.innerWidth <= 768;
-            const resumeDelay = isMobile ? 8000 : 7000; // 8 seconds for mobile, 7 seconds for desktop
+            const resumeDelay = isMobile ? 2000 : 1500; // 2 seconds for mobile, 1.5 seconds for desktop
             setTimeout(startAutoScroll, resumeDelay);
         }
 
@@ -4461,7 +4487,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // Resume auto-scroll when not hovering
         function resumeAutoScroll() {
             isAutoScrolling = true;
-            startAutoScroll();
+            // Add a small delay before resuming to prevent flickering
+            setTimeout(startAutoScroll, 300);
         }
 
         // Event listeners
@@ -4470,8 +4497,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Hover events for auto-scroll control (desktop only)
         if (window.innerWidth > 768) {
-            container.addEventListener('mouseenter', pauseAutoScroll);
-            container.addEventListener('mouseleave', resumeAutoScroll);
+            // Use the track element instead of container for more precise hover detection
+            track.addEventListener('mouseenter', pauseAutoScroll);
+            track.addEventListener('mouseleave', resumeAutoScroll);
+
+            // Also pause when hovering over navigation buttons
+            prevBtn.addEventListener('mouseenter', pauseAutoScroll);
+            nextBtn.addEventListener('mouseenter', pauseAutoScroll);
+            prevBtn.addEventListener('mouseleave', resumeAutoScroll);
+            nextBtn.addEventListener('mouseleave', resumeAutoScroll);
         }
 
         // Handle window resize
