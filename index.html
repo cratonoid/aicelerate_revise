@@ -4429,7 +4429,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Different speeds for mobile vs desktop
             const isMobile = window.innerWidth <= 768;
-            const scrollDelay = isMobile ? 6000 : 4000; // 6 seconds for mobile, 4 seconds for desktop
+            const scrollDelay = isMobile ? 6000 : 5000; // 6 seconds for mobile, 5 seconds for desktop
 
             autoScrollInterval = setInterval(() => {
                 const { scrollAmount } = getCardDimensions();
@@ -4448,7 +4448,7 @@ document.addEventListener("DOMContentLoaded", function() {
         function resetAutoScroll() {
             clearInterval(autoScrollInterval);
             const isMobile = window.innerWidth <= 768;
-            const resumeDelay = isMobile ? 8000 : 6000; // 8 seconds for mobile, 6 seconds for desktop
+            const resumeDelay = isMobile ? 8000 : 7000; // 8 seconds for mobile, 7 seconds for desktop
             setTimeout(startAutoScroll, resumeDelay);
         }
 
