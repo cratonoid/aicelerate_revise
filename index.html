@@ -327,8 +327,8 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
         left: 50%;
         top: 85%;
         transform: translateX(-50%);
-        font-size: 1.7rem;
-        padding: 0.5rem 1.5rem;
+        font-size: 16px;
+        padding: 1rem 3.5rem;
     }
 }
 
@@ -348,12 +348,22 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
+.section-spacing-standard-2 {
+      padding-top: 4rem !important;    /* 64px - Desktop standard */
+      padding-bottom: 4rem !important; /* 64px - Desktop standard */
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
 
 /* Mobile responsive spacing - maintains proportional consistency */
 @media (max-width: 768px) {
     .section-spacing-standard {
         padding-top: 3rem !important;    /* 48px - Mobile standard */
         padding-bottom: 3rem !important; /* 48px - Mobile standard */
+    }
+    .section-spacing-standard-2 {
+        padding-top: 3rem !important;    /* 48px - Mobile standard */
+        padding-bottom: 2rem !important; /* 48px - Mobile standard */
     }
 }
 
@@ -410,6 +420,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
         padding: 0.5rem 1.5rem !important;
         font-size: 1.7rem !important;
         font-weight: 600 !important;
+        margin-top: 10% !important;
     }
 }
 
@@ -730,7 +741,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
 
 <!-- How it works -->
-<div class="hwcont container-fluid section-spacing-standard">
+<div class="hwcont container-fluid section-spacing-standard-2">
     <div class="hw-content-wrapper">
          <div class="hwhead text-center">
                 <h1 class="content-spacing" style="
@@ -906,11 +917,20 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     }
 
     .hwbtn{
+      margin-top: 2%;
             font-weight: 600 !important;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
+    }
+    .hwbtn1{
+    font-weight: 600 !important;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 2% !important;
     }
     .hwcont{
         background-color: #edeef5;
@@ -946,7 +966,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
     /* Laptop/Desktop version - Add margin-bottom to button */
     @media (min-width: 992px) {
-        .hwbtnrw .hwbtn {
+        .hwbtnrw .hwbtn{
             margin-bottom: 2rem;
         }
     }
@@ -3383,7 +3403,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
   <!-- Centered CTA Button -->
   <div class="cta-section text-center btn-spacing-standard">
-    <a href="#" class="hwbtn btn btn-primary py-3 px-5 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
+    <a href="#" class="hwbtn1 btn btn-primary py-3 px-5 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
         font-size: 18px;
         background-color: #696cc7;
         color: #ffffff;
@@ -3513,10 +3533,21 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     font-size: 1.1rem !important;
   }
 
-  .hwbtn {
+  .hwbtn{
     width: 100%;
     max-width: 300px;
     font-size: 16px !important;
+  }
+  .ltcontbtn {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px !important;
+  }
+  .hwbtn1{
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px !important;
+    margin-bottom: 6% !important;
   }
 }
 
