@@ -323,12 +323,10 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 /* Background for Mobile */
 @media (max-width: 768px) {
     .apply-btn {
-      font-family: 'Montserrat', sans-serif !important;
         left: 50%;
         top: 85%;
         transform: translateX(-50%);
-        font-size: 16px;
-        padding: 1rem 3.5rem;
+        /* Other styles handled by unified button styling above */
     }
 }
 
@@ -414,14 +412,52 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     }
 }
 
-/* BUTTON HEIGHT CONSISTENCY - Mobile */
+/* UNIFIED BUTTON STYLING - Mobile */
 @media (max-width: 768px) {
-    .hwbtn, .ltcontbtn, .bookbtn {
-        padding: 0.5rem 1.5rem !important;
-        font-size: 1.7rem !important;
+    .apply-btn, .hwbtn, .ltcontbtn, .bookbtn, .hwbtn1, .btn-demo, .modal .btn {
+        /* Consistent dimensions */
+        padding: 0.75rem 2rem !important;
+        width: 100% !important;
+        max-width: 17.5rem !important; /* 280px */
+        min-height: 3rem !important; /* 48px */
+        
+        /* Consistent typography */
+        font-size: 1.25rem !important; /* 20px */
         font-weight: 600 !important;
-        margin-top: 10% !important;
+        font-family: 'Montserrat', sans-serif !important;
+        
+        /* Consistent styling */
+        border-radius: 1.875rem !important; /* 30px */
+        background-color: #696cc7 !important;
+        color: #ffffff !important;
+        border-color: #696cc7 !important;
+        box-shadow: 0 4px 8px rgba(59, 101, 255, 0.382) !important;
+        transition: all 0.4s ease !important;
+        
+        /* Consistent spacing */
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        
+        /* Center alignment */
+        display: inline-block !important;
+        text-align: center !important;
+        line-height: 1.2 !important;
     }
+    
+    /* Hover state consistency */
+    .apply-btn:hover, .hwbtn:hover, .ltcontbtn:hover, .bookbtn:hover, .hwbtn1:hover, .btn-demo:hover {
+        background-color: #484cbd !important;
+        border-color: #484cbd !important;
+        transform: translateY(-2px) !important;
+    }
+}
+
+/* UNIFIED BUTTON FONT SIZE - Desktop (Web View) */
+@media (min-width: 769px) {
+  .apply-btn, .hwbtn, .ltcontbtn, .bookbtn, .hwbtn1, .btn-demo, .modal .btn {
+    font-size: 1.125rem !important; /* 18px */
+    line-height: 1.2 !important;
+  }
 }
 
 /* REMOVE UNWANTED SPACING */
@@ -703,12 +739,6 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
 
         .industry-card h5 {
             font-size: 0.9rem !important;
-        }
-
-        .hwbtn {
-          font-weight: 600 !important;
-            font-size: 1.7rem !important;
-            padding: 10px 30px !important;
         }
     }
 
@@ -1779,12 +1809,13 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
   }
 
   .btn-demo {
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     background-color: #696cc7;
     color: #fff;
     border-radius: 25px;
     padding: 10px 25px;
     font-weight: 500;
+    /* Mobile styles handled by unified button styling */
   }
 
   .accordion-body {
@@ -3533,22 +3564,7 @@ src="https://www.facebook.com/tr?id=1219226336561767&ev=PageView&noscript=1"
     font-size: 1.1rem !important;
   }
 
-  .hwbtn{
-    width: 100%;
-    max-width: 300px;
-    font-size: 16px !important;
-  }
-  .ltcontbtn {
-    width: 100%;
-    max-width: 300px;
-    font-size: 16px !important;
-  }
-  .hwbtn1{
-    width: 100%;
-    max-width: 300px;
-    font-size: 16px !important;
-    margin-bottom: 6% !important;
-  }
+  /* Button styles now handled by unified button styling above */
 }
 
 @media (max-width: 576px) {
